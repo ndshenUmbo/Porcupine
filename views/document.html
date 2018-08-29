@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Document</title>
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+<style>
+    .container{
+        margin-bottom:50px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h3 class="title">Get all Users</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/users</p>
+        <p><b class="Response">Response: </b>return all users</p>
+    </div>
+
+    <div class="container">
+        <h3 class="title">Get User by ID</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/users/id/:userID</p>
+        <p><b class="Response">Response: </b>return specific user</p>
+    </div>
+
+    <div class="container">
+        <h3 class="title">Get User by name</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/users/name/:userName</p>
+        <p><b class="Response">Response: </b>return specific user's correlateduser name</p>
+    </div>
+
+    <div class="container">
+        <h3 class="title">Get all articles</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/articles</p>
+        <p><b class="Response">Response: </b>return all articles</p>
+    </div>
+
+    <div class="container">
+        <h3 class="title">Get Article by ID</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/articles/id/:articleID</p>
+        <p><b class="Response">Response: </b>return specific article</p>
+    </div>
+
+    <div class="container">
+        <h3 class="title">Get top groups</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/groups/topGroup/:limit</p>
+        <p><b class="Response">Response: </b>return limit amount of groups with most users</p>
+    </div>
+
+    <div class="container">
+        <h3 class="title">Get User's Group</h3>
+        <b class="method">GET</b>
+        <p><b class="Request">Request: </b>/api/groups/userID/:userID</p>
+        <p><b class="Response">Response: </b>return the groupID of the User</p>
+    </div>
+
+</body>
+</html>
